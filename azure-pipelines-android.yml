@@ -15,6 +15,9 @@ variables:
 
 steps:
 
+- script: unset SONARQUBE_SCANNER_PARAMS
+  displayName: 'Unset SONARQUBE_SCANNER_PARAMS'
+  
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '21'
