@@ -27,6 +27,9 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'buildandroid'
     projectName: 'buildandroid'
+    extraProperties: |
+      sonar.qualitygate.wait=true
+      sonar.branch.name=""
     
 - task: CmdLine@2
   displayName: 'Instalar workaload MAUI'
