@@ -29,7 +29,6 @@ steps:
     projectName: 'buildandroid'
     extraProperties: |
       sonar.qualitygate.wait=true
-      sonar.branch.name=main
     
 - task: CmdLine@2
   displayName: 'Instalar workaload MAUI'
